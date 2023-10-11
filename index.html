@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Nooni – Elementor WooCommerce</title>
+</head>
+
+<body>
+    <!-- nav bar  -->
+    <nav class="bg-[#000000]">
+        <div class="container">
+            <div class="flex justify-between py-[9px]">
+                <div class="text-white ">
+                    <p class="text-[12px]">UP TO 40% OFF BEST-SELLING FURNITURE. <a href=""
+                            class="underline font-normal underline-offset-2">SHOP NOW</a></p>
+                </div>
+                <div class="text-white">
+                    <ul class="flex text-[12px]">
+                        <li class="dropdown cursor-pointer ">ENGLISH <i class="fa-solid fa-chevron-down ms-[5px]"></i>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-item text-black py-[6px] font-[12px] "><a href="">FRANCAIS</a></li>
+                                <li class="dropdown-item text-black "><a href="">DEUTSCH</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown cursor-pointer ms-[20px] ">USD <i
+                                class="fa-solid fa-chevron-down ms-[5px]"></i>
+                            <ul class="dropdown-content">
+                                <li class="dropdown-item text-black py-[6px] font-[12px] "><a href="">USD</a></li>
+                                <li class="dropdown-item text-black "><a href="">EUR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+
+    <header id="Header" class="bg-[#f2f2f2]">
+        <div class="px-[50px] py-[39px] flex justify-between items-center">
+            <div class="flex">
+                <div class="pr-[35px] text-xl">
+                    <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample"><span class="icon"><i class="fa-solid fa-bars"></i></span></a>
+                </div>
+                <div class="pr-[35px] text-xl">
+                    <span class="icon"><i class="fa-brands fa-searchengin"></i></span>
+                </div>
+            </div>
+            <div class="header-center">
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <a href="javascript:void(0)">
+                            <img src="images/nooni-logo.png" alt="Nooni" title="Nooni" class="w-[160px]">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="p-[12px] text-xl leading-[1px]">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="p-[12px] text-xl leading-[1px]">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="p-[12px] text-xl leading-[1px]">
+                    <a class="cursor-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- slider -->
+    <div style="width: 345px !important;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="offcanvas-body overflow-y-hidden">
+            <div class="flex flex-col py-[25px] px-[50px]">
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a
+                        class="text-[24px]  underline underline-offset-8 transition duration-500 text-[#8e8e8e] ">Home</a>
+                    <i class="fa-solid fa-chevron-right text-[16px] "></i>
+                </div>
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a class="text-[24px] offCanvas hover:text-[#8e8e8e]  ">Shop</a>
+                    <i class="fa-solid fa-chevron-right text-[16px]"></i>
+                </div>
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a class="text-[24px]  offCanvas hover:text-[#8e8e8e] ">Product</a>
+                    <i class="fa-solid fa-chevron-right text-[16px]"></i>
+                </div>
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a class="text-[24px]  offCanvas hover:text-[#8e8e8e] ">Blog</a>
+                    <i class="fa-solid fa-chevron-right text-[16px]"></i>
+                </div>
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a class="text-[24px] offCanvas hover:text-[#8e8e8e] ">About us</a>
+                </div>
+                <div class=" flex items-center justify-between py-[12px]">
+                    <a class="text-[24px]  offCanvas hover:text-[#8e8e8e] ">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping -->
+    <div style="width: 345px !important;" class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="fa-solid fa-xmark text-[24px]"></i></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="flex items-center justify-center">
+                <label class="my-[100px]">
+                    <img class="w-[160px] pb-[15px] opacity-10" src="images/shopping-bags.svg" alt="Bags-shoping">
+                    <span class=" text-[15px] font-light">Your cart is currently empty</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <!-- banneer-->
+    <section class="bg-[#f2f2f2]">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row align-items-center ">
+                            <div class="col-6 px-[30px]">
+                                <h4 class="uppercase mb-[10px] text-[18px]">new arrivals</h4>
+                                <h2 class="text-[71px] mb-[10px] leading-[75px] tracking-wider">Chairs & Seating You'll
+                                    Love</h2>
+                                <p class=" pt-[10px] text-[16px] mb-[30px] font-normal">Designer chair styles for every
+                                    space -
+                                    <span class="font-[700]">Free
+                                        Shipping</span>
+                                </p>
+                                <a href="javascript:void(0)"
+                                    class=" decoration-solid color-black font-[700] underline hoverLine1 underline-offset-8 text-[16px]">Shop
+                                    Now</a>
+                            </div>
+                            <div class="col-6">
+                                <img class="" src="images/slide-1-chair.png" alt="chair">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-6 px-[30px]">
+                                <h4 class="uppercase mb-[10px] text-[18px]">SALE OFF 30%</h4>
+                                <h2 class="text-[71px] mb-[10px] leading-[75px] tracking-wider">Lamps & Lighting
+                                    Great Low Prices</h2>
+                                <p class=" pt-[10px] text-[16px] mb-[30px] font-normal">Free standard shipping -
+                                    <span class="font-[700]">with $35</span>
+                                </p>
+                                <a href="javascript:void(0)"
+                                    class=" decoration-solid color-black font-[700] underline hoverLine1 underline-offset-8 text-[16px]">Shop
+                                    Now</a>
+                            </div>
+                            <div class="col-6">
+                                <img class="" src="images/slide-2-home1-1.png" alt="chair">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row align-items-center">
+                            <div class="col-6 px-[30px]">
+                                <h4 class="uppercase mb-[10px] text-[18px]">new arrivals</h4>
+                                <h2 class="text-[71px] mb-[10px] leading-[75px] tracking-wider">Chairs & Seating You'll
+                                    Love</h2>
+                                <p class=" pt-[10px] text-[16px] mb-[30px] font-normal">Designer chair styles for every
+                                    space -
+                                    <span class="font-[700]">Free
+                                        Shipping</span>
+                                </p>
+                                <a href="javascript:void(0)"
+                                    class=" decoration-solid color-black font-[700] underline hoverLine1 underline-offset-8 text-[16px]">Shop
+                                    Now</a>
+                            </div>
+                            <div class="col-6 py-[100px]">
+                                <img class="" src="images/slide-3-home1-1.png" alt="chair">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- category  -->
+
+    <section class="catagory ">
+        <div class="w-full overflow-hidden px-[50px]">
+            <h2 class="text-[25px] my-[20px] ">SHOP BY CATEGORY</h2>
+            <div class="row ">
+
+                <div class="owl-carousel owl-theme ">
+                    <div class="item ">
+                        <div class="col-3">
+                            <div class="w-[400px] h-[100px] d-flex align-items-center rounded-full mr-4  flex-shrink-0">
+                                <div class="caterogy-img">
+                                    <img class="w-[100px] h-[100px] rounded-full" src="images/bed.jpg" />
+                                </div>
+                                <div class="category-data pl-[25px]">
+                                    <p style="transition: all 0.5s;"
+                                        class="text-[15px] font-bold hover:text-[#d10202] hover:transition-all">Bed</p>
+                                    <p class="text-[15px] ">7 products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-3">
+                            <div
+                                class="w-[400px]  h-[100px] d-flex align-items-center rounded-full mr-4  flex-shrink-0">
+                                <div class="caterogy-img">
+                                    <img class="w-[100px] h-[100px] rounded-full" src="images/lamp-1.jpg" />
+                                </div>
+                                <div class="category-data pl-[25px]">
+                                    <p style="transition: all 0.5s;"
+                                        class="text-[15px] font-bold hover:text-[#d10202] hover:transition-all">Lamp</p>
+                                    <p class="text-[15px] font-normal">7 products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-3">
+                            <div
+                                class="w-[400px]  h-[100px] d-flex align-items-center rounded-full mr-4  flex-shrink-0">
+                                <div class="caterogy-img">
+                                    <img class="w-[100px] h-[100px] rounded-full" src="images/chair-1.jpg" />
+                                </div>
+                                <div class="category-data pl-[25px]">
+                                    <p style="transition: all 0.5s;"
+                                        class="text-[15px] font-bold hover:text-[#d10202] hover:transition-all">Chair
+                                    </p>
+                                    <p class="text-[15px] font-normal">12 products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-3">
+                            <div class="w-[400px] h-[100px] d-flex align-items-center rounded-full mr-4  flex-shrink-0">
+                                <div class="caterogy-img">
+                                    <img class="w-[100px] h-[100px] rounded-full" src="images/table.jpg " />
+                                </div>
+                                <div class="category-data pl-[25px]">
+                                    <span style="transition: all 0.5s;"
+                                        class="text-[15px] font-bold hover:text-[#d10202] hover:transition-all">Table
+                                    </span>
+                                    <p class="text-[15px] font-normal">5 products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section  -->
+
+    <section class="foursection py-[50px]">
+        <div class="container ">
+            <div class="row">
+                <div class="col-6 ">
+                    <div class=" firstscale col-12 relative overflow-hidden" width="690" height="410">
+                        <img class="transition-all duration-500"
+                            src="https://nooni-be87.kxcdn.com/nooni/wp-content/uploads/2023/04/banner-0.jpg"
+                            alt="banner-1">
+                        <div class="fix-1 absolute top-[60px] left-[30px]">
+                            <h2 class="text-[48px]  tracking-[ 0.075em] font-[400] mb-[46px]">Up
+                                To 40% Off <br> Top Lamp
+                                Brands</h2>
+                            <a href="javascript:void(0)"
+                                class=" hoverLine1 underline-offset-4 text-[16px] uppercase  hover:cursor-pointer transition duration-500 hover:duration-500 hover:transition max-w-[14%] pt-[15px] ">Shop
+                                Now</a>
+                        </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="relative">
+                            <img src="https://nooni-be87.kxcdn.com/nooni/wp-content/uploads/2023/04/banner-1.jpg"
+                                alt="">
+                            <div class="box-content">
+                                <div class=" absolute top-[60px] left-[30px]">
+                                    <div class="text-[14px] foont-[400] leading-[0.075em] mb-[5px]">NEW PRODUCTS</div>
+                                    <h2 class="text-[30px] font-[700] leading-
+                            [ 0.075em] mb-[26px]">Up To 25% Off Cabinets</h2>
+                                    <a href="javascript:void(0)"
+                                        class=" hoverLine1 underline-offset-1 text-[14px] font-[700] uppercase  hover:cursor-pointer transition duration-500 hover:duration-500 hover:transition max-w-[14%] ">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6  relative overflow-hidden " height="750">
+                    <img src="https://nooni-be87.kxcdn.com/nooni/wp-content/uploads/2023/04/banner-2.jpg" alt="">
+                    <div class="absolute top-[20px] left-[50%] text-center transform -translate-x-1/2 w-[100%] ">
+                        <div class="text-[#fff]">BIG SALE</div>
+                        <h2 class="  text-[#fff] text-[48px] p-[10px_0_12px_0px] tracking-[ 0.075em] font-[400]">Up to
+                            70% Off <br> Furniture &amp; Decor</h2>
+                        <a href="javascript:void(0)"
+                            class=" text-[#fff] hoverLine underline-offset-4 font-[600] text-[14px] uppercase  hover:cursor-pointer transition duration-500 hover:duration-500 hover:transition max-w-[14%] pt-[15px] ">Shop
+                            Now</a>
+                    </div>
+                </div>
+
+                <div class="col-12 relative my-[30px] overflow-hidden h-[200px] lastscale">
+                    <img src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/04/banner-3.jpg"
+                        class="object-fill object-[center_bottom] absolute  bottom-[0px] transition-transform	 hover:object-[center_top] ">
+                    <div class="absolute top-[50%] left-[100px] transform  -translate-y-1/2 flex">
+                        <div class="text-[72px] font-[700] leading-[1em]">
+                            <p>10%</p>
+                        </div>
+                        <div class="ml-[30px]">
+                            <h2 class="text-[32px] leading-[40px] tracking-[2px] ">Get More Pay Less</h2>
+                            <p class="text-[18px] leading-[2em] tracking-[0.075em]">On orders $500 + Use Coupon Code:
+                                <strong>WSD10</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mrnu -->
+    <section>
+        <div class="my-container">
+            <div class="flex flex-wrap">
+                <div class="w-[25%] mb-[44px] product-title">
+                    <h2 class="font-inter w-[50%]">Best Modern Furniture</h2>
+                    <p class="font-inter">See All >></p>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/11.jpg" class="img-1" />
+                        <img src="images/1.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <div class="product-label">
+                            <span class="bg-[#d10202] text-white">hot</span>
+                            <span class="bg-black text-white">sale</span>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter  font-black text-[13px]">select options</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Wood Outdoor Adirondack Chair</h3>
+                        <span class="o-price font-inter">$1,009</span>
+                        <span class="d-price font-inter">$1,250</span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/2.jpg" class="img-1" />
+                        <img src="images/22.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">add to cart</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Solid Wood Bar Storage Cabinet</h3>
+                        <span class="o-price font-inter">$1,899</span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/3.jpg" class="img-1" />
+                        <img src="images/33.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">SELECT OPTIONS</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Solid Wood Bed With Fabric Headboard</h3>
+                        <span class="o-price font-inter">$3,707-</span>
+                        <span class="o-price font-inter">$5,707 </span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/4.jpg" class="img-1" />
+                        <img src="images/44.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <div class="product-label">
+                            <span class="bg-[#919191] text-white">sold out</span>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">read more</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Floor Lamp With Polyester Shade</h3>
+                        <span class="o-price font-inter">$399</span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/5.jpg" class="img-1" />
+                        <img src="images/55.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <div class="product-label">
+                            <span class="bg-[#d10202] text-white">hot</span>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">add to cart</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Garden Chair With Armrests</h3>
+                        <span class="o-price font-inter">$1,009</span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/6.jpg" class="img-1" />
+                        <img src="images/44.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <div class="product-label">
+                            <span class="bg-black text-white">sale</span>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">add to cart</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Led Steel Floor Lamp</h3>
+                        <span class="o-price font-inter">$299</span>
+                        <span class="d-price font-inter">$429</span>
+                    </div>
+                </div>
+
+                <div class="w-[25%] mb-[44px]">
+                    <div class="product-card">
+                        <img src="images/7.jpg" class="img-1" />
+                        <img src="images/77.jpg" class="img-2" />
+                        <div class="icon-menu flex flex-col">
+                            <i class="fa-solid fa-magnifying-glass text-[20px]"></i>
+                            <i class="fa-solid fa-code-compare text-[20px]"></i>
+                            <i class="fa-regular fa-heart text-[20px]"></i>
+                        </div>
+                        <i class="fa-regular fa-heart text-[20px] fix-icon"></i>
+                        <a class="p-btn font-inter font-black text-[13px]">add to cart</a>
+                    </div>
+                    <div class="card-detail">
+                        <h3 class="font-inter">Teak Garden Chair With Armrests</h3>
+                        <span class="o-price font-inter">$999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog   -->
+
+    <section class="blog py-[80px] overflow-hidden">
+        <div class="container">
+            <div class="blog-data">
+                <h2 class="uppercase mb-[43px] color-black font-[700] text-[25px]">our blog</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="first-img relative ">
+                        <img src="images/blog-1-1174x862.jpg">
+                        <div class="ava-img  ">
+                            <img class=" border-[8px] border-[rgba(217,217,217,0.4)]    h-[60px] w-[60px] top-[85%] left-[3%] absolute rounded-full "
+                                src="images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="first-content">
+                        <div class="blog-first-data">
+                            <span
+                                class="text-[14px] mb-[20px] d-inline-block text-[#848484] cursor-pointer hover:text-[#D10202] transition-all	">FURNITURE,<span>TABLE</span></span>
+                            <h3
+                                class="text-[30px] text-[#000000] mb-[10px] cursor-pointer hover:text-[#D10202] transition-all">
+                                The Secrets to a Living Room that Draws You In</h3>
+                            <p class="text-[17px] mb-[12px] text-[#848484]  leading-[31px] ">Nunc ut sem ut ex
+                                sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies,
+                                malesuada</p>
+                            <a href=""
+                                class=" cursor-pointer	 text-[14px] text-[#000000] px-[2px] font-[700] tracking-[1.0462px] underline underline-offset-8">Read
+                                more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="first-img relative">
+                        <img class=" stratch_img w-[100%] h-[431px]" src="images/blog-2-1174x862.jpg">
+                        <div class="ava-img-2  ">
+                            <img class=" border-[8px] border-[rgba(217,217,217,0.4)]    h-[60px] w-[60px] top-[80%] left-[15%] absolute rounded-full "
+                                src="images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- video -->
+    <section class="bg-[#000] brightness-50 col-12">
+        <div class="relative z-[1]">
+            <video style="width: 100%; height: 600px; object-fit: cover;"
+                src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"
+                autoplay loop muted>
+            </video>
+            <h2
+                class="top-[50%] left-[50%] back uppercase text-[#fff] text-[120px] font-[800] absolute transform -translate-x-1/2 -translate-y-1/2">
+                Wood</h2>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-[50px] pt-[70px]">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-3">
+                    <div class="">
+                        <div class="footer-title mb-[10%]">
+                            <img src="images/nooni-logo.png" alt="logo" class="w-[160px] h=[60px]" />
+                        </div>
+                        <div class="footer-body grid grid-rows-3 gap-4 text-[#848484]">
+                            <p>Text: +00(234)23-45-666</p>
+                            <p>Mon – Fri: 8 am – 8 pm</p>
+                            <p>Sat – Sun: 8 am – 7 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="footer-title mb-[10%]">
+                            <h4 class="uppercase font-bold">About</h4>
+                        </div>
+                        <div class="footer-body">
+                            <ul class="grid grid-rows-4 gap-4">
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Our
+                                        Story</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Influencers</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Join
+                                        our team</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="">
+                        <div class="footer-title mb-[10%]">
+                            <h4 class="font-bold">CUSTOMER SERVICES</h4>
+                        </div>
+                        <div class="footer-body text-[#848484]">
+                            <ul class="grid grid-rows-5 gap-4">
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Contact
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Customer
+                                        Service</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Find
+                                        Store</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Book
+                                        appointment</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-[#848484] hover:text-[#D10202] transition-colors duration-300">Shipping
+                                        & Returns</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="">
+                        <div class="footer-title mb-[10%]">
+                            <h4 class="font-bold">SIGN UP FOR EMAILS</h4>
+                        </div>
+                        <div class="footer-body text-[#848484]">
+                            <p>
+                                Enjoy 15% off* your first order when you sign up for our
+                                newsletter
+                            </p>
+                            <form class="mt-4">
+                                <div class="flex">
+                                    <input type="email"
+                                        class="w-full border rounded-l px-4 py-2 focus:outline-none focus:border-[#848484]"
+                                        placeholder="Your email" />
+                                    <button type="submit"
+                                        class="bg-[#000] text-white px-4 py-2 rounded-r hover:bg-[#D10202] transition-colors duration-300">
+                                        Subscribe
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="icon">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="my-[15%]">
+                                        <i
+                                            class="fa-brands fa-facebook-f mx-[3%] hover:text-[#D10202] transition-colors duration-300	"></i>
+                                        <i
+                                            class="fa-brands fa-twitter mx-[3%] hover:text-[#D10202] transition-colors duration-300	"></i>
+                                        <i
+                                            class="fa-brands fa-instagram mx-[3%] hover:text-[#D10202] transition-colors duration-300	"></i>
+                                        <i
+                                            class="fa-brands fa-pinterest mx-[3%] hover:text-[#D10202] transition-colors duration-300	"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- <div class="my-[5%]"></div> -->
+    <div class="container">
+        <section class="last py-[20px] border-top ">
+            <div class="row">
+                <div class="flex justify-between">
+                    <div>
+                        <ul class="grid grid-cols-3 gap-4 text-[#848484]">
+                            <li><a href="#" class="hover:text-[#D10202] transition-colors duration-300">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="hover:text-[#D10202] transition-colors duration-300">Help</a></li>
+                            <li><a href="#" class="hover:text-[#D10202] transition-colors duration-300">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-[#848484]">© Nooni. All Rights Reserved.</p>
+                    </div>
+                    <div><img src="images/payment.png" alt="payment.png" /></div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false, 
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            items: 4,
+            autoplay: true,
+            autoplayTimeout: 3000,
+        })
+    </script>
+    <script src="js/tailwind.config.js"></script>
+</body>
+
+</html>

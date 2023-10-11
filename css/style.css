@@ -1,0 +1,295 @@
+body {
+    font-family: "Inter" !important;
+    background-color: #f2f2f2;
+    overflow-x: hidden !important;
+}
+
+.container {
+    padding: 0 20px !important ;
+}
+
+img{
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    top: 27px;
+    padding: 20px 20px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 140px;
+    left: 0;
+    margin-left: -20px;
+    text-align: start;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.offCanvas {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+.offCanvas::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    background-color: #8e8e8e;
+    width: 0;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.offCanvas:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+span.swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: black;
+}
+.swiper-pagination {
+    text-align: start !important;
+}
+
+
+.product-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.product-title h2 {
+    font-size: 48px;
+    letter-spacing: 3.6px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.product-title p {
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.product-title p:hover {
+    cursor: pointer;
+    color: #d10202;
+}
+
+.product-card {
+    position: relative;
+    margin: 0 10px;
+}
+
+.img-1 {
+    display: block;
+}
+
+.img-2 {
+    display: none;
+}
+
+.product-label {
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 15px;
+}
+
+.product-label span {
+    padding: 4px 12px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.icon-menu {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    right: 15px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.icon-menu i {
+    background: #fff;
+    text-align: center;
+    padding-top: 12px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.icon-menu i:hover {
+    background: #d10202;
+    color: #fff;
+}
+
+.fix-icon {
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+
+.p-btn {
+    position: absolute;
+    content: '';
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    padding: 18px 0;
+    opacity: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.p-btn:hover {
+    background: #d10202;
+    color: #fff;
+}
+
+.product-card:hover {
+    cursor: pointer;
+}
+
+.product-card:hover .img-1 {
+    display: none;
+    transition: all 0.5;
+}
+
+.product-card:hover .img-2 {
+    display: block;
+    transition: all 0.5s;
+}
+
+.product-card:hover .p-btn {
+    opacity: 1;
+    bottom: 0;
+}
+
+.product-card:hover .icon-menu {
+    bottom: 65px;
+    opacity: 1;
+}
+
+.card-detail {
+    margin: 17px 10px 0;
+}
+
+.card-detail h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    transition: all 0.5s;
+}
+
+.card-detail h3:hover {
+    color: #d10202;
+    cursor: pointer;
+}
+
+.card-detail span {
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.card-detail .o-price {
+    font-weight: 700;
+}
+
+.card-detail .d-price {
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+
+.blog .first-img{
+    overflow: hidden;
+}
+.blog .first-img img{
+    transition: all 0.5s;
+}
+.blog .first-img:hover img{
+    scale: 1.1;
+}
+
+.blog .second-img {
+    width: 588px;
+    height: 431px;
+}
+.blog .second-img img{
+    object-fit: cover;
+}
+.stratch_img {
+    object-fit: cover;
+    object-position: left;
+}
+
+
+
+.firstscale:hover img {
+    transform: scale(1.1);
+}
+
+.lastscale img {
+    transition: all 0.7s;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    display: none;
+}
+.caterogy-img{
+    transition: all 0.5s;
+    position: relative;
+}
+.caterogy-img:hover{
+    scale: 1.2;
+}
+
+.caterogy-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.5s;
+   border-radius: 50%;
+}
+
+.caterogy-img:hover::before {
+    opacity: 1;
+}
+
+
+
+
